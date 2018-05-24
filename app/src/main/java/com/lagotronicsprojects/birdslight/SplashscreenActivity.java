@@ -20,9 +20,10 @@ public class SplashscreenActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splashscreen);
+        //LOAD EVERYTHING HERE. (GLOBALS AND SERVICES)
+        //TRANSFER TO NEXT ACTIVITY WHEN DONE.
 
-
-
+        /*
         View img = findViewById(R.id.heart_vector);
 
         img.setOnClickListener(new View.OnClickListener() {
@@ -42,7 +43,7 @@ public class SplashscreenActivity extends Activity {
                         .start();
             }
         });
-
+        */
     }
 
 }
