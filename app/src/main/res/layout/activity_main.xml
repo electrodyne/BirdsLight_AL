@@ -4,10 +4,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.lagotronicsprojects.birdslight.MainActivity"
-    android:background="@drawable/gradient_test">
+    android:background="@drawable/gradient_test"
+    tools:context="com.lagotronicsprojects.birdslight.MainActivity">
 
-    <com.sdsmdg.harjot.vectormaster.VectorMasterView
+    <com.andrognito.pinlockview.IndicatorDots
+        android:id="@+id/indicator_dots"
+        android:layout_width="255dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        app:dotDiameter="13dp"
+        app:dotSpacing="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <com.andrognito.pinlockview.PinLockView
+        android:id="@+id/pin_lock_view"
+        android:layout_width="234dp"
+        android:layout_height="281dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:keypadButtonSize="72dp"
+        app:keypadDeleteButtonSize="28dp"
+        app:keypadTextColor="#FFFFFF"
+        app:keypadTextSize="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/indicator_dots"
+        app:layout_constraintVertical_bias="0.226"
+        app:pinLength="6" />
+
+    <TextView
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="72dp"
+        android:ems="10"
+        android:textColor="@color/greyish"
+        android:textSize="22sp"
+        android:textAlignment="center"
+        android:inputType="textPersonName"
+        android:text="One Time Product Key"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--com.sdsmdg.harjot.vectormaster.VectorMasterView
         android:id="@+id/heart_vector"
         android:layout_width="150dp"
         android:layout_height="150dp"
@@ -87,6 +138,6 @@
         android:ems="10"
         android:inputType="numberPassword"
         app:layout_constraintStart_toEndOf="@+id/num_5"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" /-->
 
 </android.support.constraint.ConstraintLayout>
